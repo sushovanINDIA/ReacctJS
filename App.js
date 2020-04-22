@@ -7,6 +7,8 @@ import Aboutus from './Aboutus';
 import Avatar from './Avatar';
 import Subscribe from './Subscribe';
 import SideMenu from './SideMenu';
+import Getdata from './Getdata';
+import Charts from './Charts';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
@@ -17,12 +19,14 @@ function App() {
     <div className="font">
       <BrowserRouter>
           <Menu/>   
-          <SideMenu/>          
+          {/*<SideMenu/>*/}          
           <Switch>
                   <Route path="/" exact component={Avatar}/>
                   <Route path="/Aboutus" component={Aboutus}/>
                   <Route path="/Subscribe" component={Subscribe}/>
                   <Route path="/SideMenu" component={SideMenu}/>
+                  <Route path="/Getdata" component={Getdata}/>
+                  <Route path="/Charts" component={Charts}/>
           </Switch>
                 
       </BrowserRouter>
