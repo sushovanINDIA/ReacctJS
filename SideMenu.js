@@ -21,16 +21,18 @@ class SideMenu extends Component{
     render(){
         return(
             <div className="font tc">
-                <div id="mySidebar" className="sidebar o-120 tl">
+                <div id="mySidebar" className="sidebar tl">
                     <Link to="#" className="closebtn" onClick={()=>this.closeNav()}>×</Link>
-                    <Link to="/">Avatar</Link>
-                    <Link to="./Aboutus">AboutUs</Link>
-                    <Link to="#">Clients</Link>
-                    <Link to="#">Contact</Link>
+                    <Link className="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib white mw5" to="/">DashBoard</Link>
+                    <Link className="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib white mw5" to="./Aboutus">AboutUs</Link>
+                    <Link className="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib white mw5" to="./Demo">Demo</Link>
+                    <Link className="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib white mw5" to="./Charts">Charts</Link>
+                    <Link className="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib white mw5" to="./GetData">Data</Link>
+                    <Link className="f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib white mw5" to="/Subscribe">Subscribe</Link>
                 </div>
 
                 <div id="main">
-                <button className="openbtn" id="openbtn" onClick={()=>this.openNav()}>☰</button>
+                <button className="openbtn" id="openbtn" onClick={()=>this.openNav()}>&#9776;</button>
                 </div>
             </div>
         )
