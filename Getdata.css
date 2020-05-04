@@ -20,3 +20,6 @@ table {
     color: black;
     margin: auto;
   }
+.loader{
+    background-color: #001320;
+  }
